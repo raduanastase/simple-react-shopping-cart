@@ -1,3 +1,41 @@
-h1 {
-  color: tomato;
+body {
+  background: #e6e6e6;
+  text-align: center;
 }
+
+.application {
+  width: 800px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+
+  .list-of-items {
+    .item {
+      background: #f0f0f0;
+      padding: 10px;
+      position: relative;
+      height: 100px;
+
+      .image, .name, .price, .counter {
+        display: inline-block;
+        vertical-align: middle;
+        width: 150px;
+      }
+
+      &:hover {
+        background: #fff18e;
+      }
+    }
+  }
+
+  .basket {
+    background: #93eed3;
+    padding: 10px;
+
+    .total {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
